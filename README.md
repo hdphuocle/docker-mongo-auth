@@ -14,8 +14,12 @@ There are a number of environment variables which you can specify to customize t
   # ENV MONGODB_ADMIN_PASS password
 
   # ENV MONGODB_APPLICATION_DATABASE your_db
-  # ENV MONGODB_APPLICATION_USER user
-  # ENV MONGODB_APPLICATION_PASS password
+  # ENV MONGODB_MAINTAIN_USER user
+  # ENV MONGODB_MAINTAIN_PASS password
+  # ENV MONGODB_DEVELOP_USER user
+  # ENV MONGODB_DEVELOP_PASS password
+  # ENV MONGODB_TESTER_USER user
+  # ENV MONGODB_TESTER_PASS password
   ```
   
 - With docker-compose.yml
@@ -28,8 +32,12 @@ There are a number of environment variables which you can specify to customize t
         - MONGODB_ADMIN_USER=admin
         - MONGODB_ADMIN_PASS=admin123
         - MONGODB_APPLICATION_DATABASE=sample
-        - MONGODB_APPLICATION_USER=aashrey
-        - MONGODB_APPLICATION_PASS=admin123
+        - MONGODB_MAINTAIN_USER=aashrey
+        - MONGODB_MAINTAIN_PASS=admin123
+        - MONGODB_DEVELOP_USER=aashrey
+        - MONGODB_DEVELOP_PASS=admin123
+        - MONGODB_TESTER_USER=aashrey
+        - MONGODB_TESTER_PASS=admin123
       ports:
         - "27017:27017"
   // more configuration
@@ -47,4 +55,3 @@ There are a number of environment variables which you can specify to customize t
     -p 27017:27017 aashreys/mongo-auth:latest
   ```
 
-Find the image on Docker Cloud @ https://cloud.docker.com/swarm/aashreys/repository/docker/aashreys/mongo-auth

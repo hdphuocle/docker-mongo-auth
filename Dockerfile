@@ -1,9 +1,9 @@
-FROM mongo
+FROM mongo:latest
 
-MAINTAINER <Aashrey Sharma> aashreysh@gmail.com
+MAINTAINER <Phuoc Le> huuphuoc2791@gmail.com
 
-// Auth Configuration. Modify as needed. 
-// These environment variables can also be specified through command line or docker-compose configuration
+# Auth Configuration. Modify as needed.
+# These environment variables can also be specified through command line or docker-compose configuration
 # ENV AUTH yes
 
 # ENV MONGODB_ADMIN_USER root
